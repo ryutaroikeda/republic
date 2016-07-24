@@ -1,0 +1,129 @@
+\documentclass[12pt,a4paper,twocolumn]{article}
+\usepackage{geometry}
+\usepackage{titling}
+\usepackage[compact]{titlesec}
+
+\geometry
+{
+a4paper,
+left=20mm,
+right=20mm,
+top=20mm,
+bottom=20mm
+}
+
+\titlespacing{\section}{0pt}{*0}{*0}
+\posttitle{\par\end{center}}
+\setlength{\droptitle}{-5em}
+
+\title{How to play Republic}
+\author{Ryutaro Ikeda\\
+\texttt{ryutaroikeda94@gmail.com}}
+
+\newcommand{\lessspace}
+{
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}
+
+\newenvironment{lessitemize}
+{
+\begin{itemize}
+\lessspace
+}
+{
+\end{itemize}
+}
+
+\newenvironment{lessdescription}
+{
+\begin{description}
+\lessspace
+}
+{
+\end{description}
+}
+
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+
+\section{Introduction}
+
+\textit{Republic} is a negotiation game for four to eight players.
+The duration of the game can be fixed prior to the start of the game.
+
+\section{Components}
+
+\begin{lessitemize}
+\item one \textit{clock}
+\item 80 \textit{coins}
+\item 40 \textit{food tokens}
+\item \textit{role cards} (one Chair, one Treasurer, one Minister of Justice, two Lords, and three commoners)
+\item 16 \textit{voting cards} (eight yea, eight nay)
+\end{lessitemize}
+
+\section{Objective}
+
+The player with the most coins at the end of the game wins.
+
+
+\section{How to play}
+
+On your turn, you become the \textit{active player}.
+Each turn consists of a \textit{discussion} (see Section \ref{sec:discussions}) followed by one \textit{action}.
+For your action, you may choose to \textit{nominate} any player for the role of \textit{Chair} (see Section \ref{sec:chairrules}), or use a power granted by your \textit{role} (see Section \ref{sec:rolerules}).
+At the end of your turn, discard one food token to avoid being \textit{eliminated} from the game.
+
+\section{Roles}
+\label{sec:rolerules}
+
+The following lists the roles and the powers granted by them.
+
+\begin{lessdescription}
+\item[The \textit{Chair}] may rearrange the roles of other players.
+\item[The \textit{Treasurer}] may create up to five coins.
+\item[The \textit{Minister of Justice}] may discard one food token to eliminate one player.
+\item[\textit{Lords}] have no special action.
+\item[\textit{Commoners}] may work for a Lord. The Lord obtains 5 food tokens.
+\end{lessdescription}
+
+\section{Discussions}
+\label{sec:discussions}
+
+The discussions must pertain to the game only. Physical threats and violence are prohibited. Food tokens and coins may be exchanged between players, but roles may not. The discussion can be ended at any time by the active player or the Chair.
+
+\section{Beginning the game}
+Decide on an \textit{end time}. The game ends when the clock is on or past the end time. 
+Each player is given two food tokens and two voting cards (yea and nay).
+Adjust the role cards according to the number of players.
+For seven players, remove a commoner.
+For six, remove a Lord.
+For five, remove the Minister of Justice.
+For four, remove another commoner.
+Shuffle the role cards and deal them.
+The person to the left of the Chair begins, and turns proceed in clockwise order.
+
+\section{Rules for the Chair}
+\label{sec:chairrules}
+
+A player may become Chair by obtaining a nomination and receiving more yea votes than nay votes.
+When a nomination is made, each player selects a voting card and places it face down on the table.
+The cards are then revealed simultaneously and the votes are counted.
+Upon becoming Chair, the player may immediately rearrange the roles of other players.
+In case of a dispute regarding the rules of the game, the Chair may resolve it.
+
+\section{Clarifications}
+
+\begin{lessitemize}
+\item You may nominate yourself for the Chair.
+\item Each player must have exactly one role.
+\item When a player is eliminated, the player's possessions are returned to the components pile.
+\item The game can also be won by the last player remaining in play.
+\item The Treasurer cannot produce more coins than are available in the components pile.
+\item The Lords cannot obtain more food than are available in the components pile.
+\end{lessitemize}
+
+
+\end{document}
